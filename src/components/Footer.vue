@@ -1,13 +1,18 @@
 <template>
-  <footer class="footer">
-    <div class="social-media">
-      <!-- Agrega aquí los iconos de las redes sociales -->
-    </div>
-    <div class="contact-info">
-      <p>Correo: correo@example.com</p>
-      <p>Teléfono: +1 555-555-5555</p>
-    </div>
-  </footer>
+  <div id="contacto">
+    <v-footer class="footer bg-brown">
+      <div class="social-media">
+        <!-- Agrega aquí los iconos de las redes sociales -->
+        <v-icon>mdi-facebook</v-icon>
+        <v-icon>mdi-instagram</v-icon>
+        <v-icon>mdi-whatsapp</v-icon>
+      </div>
+      <div class="contact-info">
+        <p>Correo: mcmaestranza23@gmail.com</p>
+        <p>Teléfono: +1 555-555-5555</p>
+      </div>
+    </v-footer>
+  </div>
 </template>
 
 <style>

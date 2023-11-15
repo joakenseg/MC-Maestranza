@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="inicio">
     <v-img class="mx-auto" height="100%" max-width="100%" :src="image" />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="nosotros">
     <HelloWorld v-for="(feature, index) in features" :key="'feature-grid' + feature.title" :title="feature.title"
       :description="feature.description" :image="feature.image" :reversed="index % 2 === 1 || isSmallScreen" class="my-5">
     </HelloWorld>

@@ -3,7 +3,7 @@
     <v-col cols="12" md="6">
       <slot>
         <h3 class="text-h4 mb-8">{{ title }}</h3>
-        <p class="text-h5 font-weight-light">{{ description }}</p>
+        <p class="text-h6 font-weight-light">{{ description }}</p>
       </slot>
     </v-col>
     <v-col cols="12" md="4" :order="reversed ? 'first' : 'last'">

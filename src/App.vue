@@ -23,7 +23,6 @@ import Footers from "./components/Footer.vue";
 import CenterText from "./components/CenterText.vue";
 import Services from "./components/Services.vue";
 
-
 export default {
   name: 'App',
   provide() {
