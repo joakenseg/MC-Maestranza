@@ -1,10 +1,7 @@
 
 const base = {
-  VMain: {
-
-  },
   VAppBar: {
-    color: "transparent",
+    color: "",
     flat: true,
 
     VBtn: {
@@ -27,16 +24,10 @@ const base = {
     },
   },
 
-  VBtn: {
-    variant: "flat",
-    class: "text-none rounded-lg",
-  },
-
   VCard: {
     color: "transparent",
     elevation: 0,
   },
-
 
   VMenu: {
     VBtn: {
@@ -48,6 +39,11 @@ const base = {
     variant: "outlined",
     density: "comfortable",
   },
+  VCarousel: {
+    VBtn: {
+      color: "transparent",
+    },
+  }
 };
 
 export { base };

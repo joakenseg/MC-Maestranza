@@ -2,15 +2,27 @@
   <v-app>
     <the-header />
     <v-main>
-      <HelloWorld />
+      <home />
+      <CenterText title="Nosotros" />
+      <v-container fluid>
+        <Features />
+      </v-container>
+      <CenterText title="Nuestros Servicios" />
+      <Services />
     </v-main>
+    <Footers />
   </v-app>
 </template>
 
 <script>
 import { useDisplay } from "vuetify";
 import TheHeader from "./components/TheHeader.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import home from "./components/Home.vue";
+import Features from "./components/Features.vue";
+import Footers from "./components/Footer.vue";
+import CenterText from "./components/CenterText.vue";
+import Services from "./components/Services.vue";
+
 
 export default {
   name: 'App',
@@ -20,9 +32,15 @@ export default {
       isMobile: mobile.value,
     };
   },
+
   components: {
     TheHeader,
-    HelloWorld
+    home,
+    Features,
+    Footers,
+    CenterText,
+    Services,
+    Services
   }
 }
 </script>

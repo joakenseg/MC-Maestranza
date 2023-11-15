@@ -24,27 +24,32 @@
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar app class="px-15">
-    <v-toolbar-title>
-      <v-toolbar-title>MC Maestranza</v-toolbar-title>
-      <!-- <v-img src=" /src/assets/mc recortado.png" max-width="150px" /> -->
-    </v-toolbar-title>
-    <v-spacer />
-    <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-4" v-if="isXs" />
-    <div v-else>
-      <v-btn text @click="$vuetify.goTo('#home')">
-        <span class="mr-2">Home</span>
-      </v-btn>
-      <v-btn text @click="$vuetify.goTo('#services')">
-        <span class="mr-2">Services</span>
-      </v-btn>
-      <v-btn text @click="$vuetify.goTo('#about')">
-        <span class="mr-2">About</span>
-      </v-btn>
-      <v-btn text @click="$vuetify.goTo('#contact')">
-        <span class="mr-2">Contact</span>
-      </v-btn>
-    </div>
+  <v-app-bar height="80">
+    <v-row>
+      <v-col cols="6" md="6" class=" my-auto">
+        <v-toolbar-title class="text-center">
+          MC Maestranza
+        </v-toolbar-title>
+      </v-col>
+      <v-col cols="6" md="6">
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-4 float-end" v-if="isXs" />
+        <div v-else>
+          <v-btn text @click="$vuetify.goTo('#inicio')">
+            <span class="mr-2">Inicio</span>
+          </v-btn>
+          <v-btn text @click="$vuetify.goTo('#nosotros')">
+            <span class="mr-2">Nosotros</span>
+          </v-btn>
+          <v-btn text @click="$vuetify.goTo('#servicios')">
+            <span class="mr-2">Servicios</span>
+          </v-btn>
+          <v-btn text @click="$vuetify.goTo('#contacto')">
+            <span class="mr-2">Contacto</span>
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+
   </v-app-bar>
 </template>
 
@@ -54,16 +59,12 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["Home", "#home"],
-      ["Services", "#services"],
-      ["About", "#about"],
-      ["Contact", "#contact"],
+      ["Inicio", "#inicio"],
+      ["Nosotros", "#nosotros"],
+      ["Servicios", "#servicios"],
+      ["Contacto", "#contacto"],
     ],
   }),
-  props: {
-    color: String,
-    flat: Boolean,
-  },
   methods: {
     onResize() {
       this.isXs = window.innerWidth < 850;
