@@ -1,6 +1,6 @@
 <template>
   <div id="contacto">
-    <v-footer class="footer bg-brown">
+    <v-footer class="footer bg-indigo-darken-4">
       <div class="social-media">
         <!-- Agrega aquí los iconos de las redes sociales -->
         <v-icon>mdi-facebook</v-icon>
