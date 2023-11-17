@@ -17,7 +17,7 @@
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar height="80" class="bg-brown">
+  <v-app-bar height="80" class="bg-indigo-darken-4">
     <v-row>
       <v-col cols="6" md="6" class=" my-auto">
         <v-toolbar-title class="text-center">
