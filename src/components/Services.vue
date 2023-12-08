@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 2,
-          title: 'Mantenciones correctivas y preventivas en planta (paradas de planta)',
+          title: 'Mantenciones correctivas y preventivas en planta',
           images: [
             "https://firebasestorage.googleapis.com/v0/b/mc-maestranza.appspot.com/o/Imagen7.jpg?alt=media&token=ed969093-b2bd-4577-89b8-bfb09f74575f",
             "https://firebasestorage.googleapis.com/v0/b/mc-maestranza.appspot.com/o/Imagen8.jpg?alt=media&token=8b044083-61af-4d66-9f8b-7c772f197341"

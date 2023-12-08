@@ -17,18 +17,18 @@
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar height="80" class="bg-indigo-darken-4">
+  <v-app-bar height="80" class="bg-blue-lighten-1">
     <v-row>
-      <v-col cols="6" md="6" class=" my-auto">
-        <v-toolbar-title class="text-center">
+      <v-col cols="7" md="6" class=" my-auto">
+        <h2 class="text-center">
           MC Maestranza
-        </v-toolbar-title>
+        </h2>
       </v-col>
-      <v-col cols="6" md="6">
+      <v-col cols="5" md="6">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-4 float-end" v-if="isXs" />
         <div v-else>
           <v-btn text v-for="([text, link], i) in items" :key="i" link @click="scrollToSection(link)">
-            <span class="mr-2">{{ text }}</span>
+            <span class="mr-2 ma-2">{{ text }}</span>
           </v-btn>
         </div>
       </v-col>
