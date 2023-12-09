@@ -12,7 +12,8 @@
               <h3 class="text-start pt-2">Sucursal</h3>
               <v-divider :thickness="5" class="border-opacity-100 my-2" width="100" color="white"></v-divider>
               <a href="https://www.google.com/maps/search/FUND%C3%93+CA%C3%91ITAS,+CAMINO+CA%C3%91ITAS+PARCELA+16-B1+KIL%C3%93METRO+7+COMUNA+DE+LOS+MUERMOS/@-41.3917472,-73.4595351,17z?hl=es-419&entry=ttu"
-                class="text-start">Fundo cañitas, camino cañitas s/n parcela 16-b1 kilómetro 7 comuna de los muermos,
+                class="text-start text-white">Fundo cañitas, camino cañitas s/n parcela 16-b1 kilómetro 7 comuna de los
+                muermos,
                 región de los lagos</a>
               <v-divider :thickness="1" class="border-opacity-100 my-2" color="white" width="250"></v-divider>
 
@@ -36,7 +37,7 @@
                   <v-icon size="50">mdi-home-circle-outline</v-icon>
                 </div>
                 <h3>Direccion</h3>
-                <a
+                <a class="text-white"
                   href="https://www.google.com/maps/place/La+Hondonada+8421,+Cerro+Navia,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662c3a16e497285:0x8bcb7055361f7473?sa=X&ved=2ahUKEwiph_-A9vmCAxVtCbkGHZ_UCOMQ8gF6BAgLEAA">Direccion
                   La Hondonada 8421, Cerro Navia, Región Metropolitana</a>
               </div>
@@ -52,7 +53,7 @@
                   <v-icon size=" 50">mdi-email-outline</v-icon>
                 </div>
                 <h3>Correo</h3>
-                <a :href="emailLink">mcmaestranza23@gmail.com</a>
+                <a class="text-white" :href="emailLink">mcmaestranza23@gmail.com</a>
               </div>
             </v-container>
           </v-col>
