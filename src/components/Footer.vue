@@ -32,7 +32,7 @@
           <v-col cols="12" md="4">
             <v-container fluid>
               <div class="pb-2">
-                <div class="py-4 float-left pr-1">
+                <div class="my-2 float-left pr-1">
                   <v-icon size="50">mdi-home-circle-outline</v-icon>
                 </div>
                 <h3>Direccion</h3>
@@ -40,15 +40,15 @@
                   href="https://www.google.com/maps/place/La+Hondonada+8421,+Cerro+Navia,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662c3a16e497285:0x8bcb7055361f7473?sa=X&ved=2ahUKEwiph_-A9vmCAxVtCbkGHZ_UCOMQ8gF6BAgLEAA">Direccion
                   La Hondonada 8421, Cerro Navia, Región Metropolitana</a>
               </div>
-              <div class="pb-2">
-                <div class="pb-3 float-left pr-1">
+              <div class="py-3">
+                <div class=" float-left pr-1">
                   <v-icon size="50">mdi-cellphone</v-icon>
                 </div>
                 <h3>Teléfono</h3>
                 <p>+56 9 8769 8974</p>
               </div>
-              <div class="pt-1">
-                <div class="float-left pr-1">
+              <div class="py-3">
+                <div class=" float-left pr-1">
                   <v-icon size=" 50">mdi-email-outline</v-icon>
                 </div>
                 <h3>Correo</h3>
@@ -57,9 +57,6 @@
             </v-container>
           </v-col>
         </v-row>
-
-
-
       </v-container>
     </v-footer>
   </div>
