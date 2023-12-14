@@ -37,9 +37,7 @@
                   <v-icon size="50">mdi-home-circle-outline</v-icon>
                 </div>
                 <h3>Direccion</h3>
-                <a class="text-white"
-                  href="https://www.google.com/maps/place/La+Hondonada+8421,+Cerro+Navia,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662c3a16e497285:0x8bcb7055361f7473?sa=X&ved=2ahUKEwiph_-A9vmCAxVtCbkGHZ_UCOMQ8gF6BAgLEAA">Direccion
-                  La Hondonada 8421, Cerro Navia, Región Metropolitana</a>
+                <p class="text-white">La Hondonada 8421, Cerro Navia, Región Metropolitana</p>
               </div>
               <div class="py-3">
                 <div class=" float-left pr-1">
@@ -53,7 +51,7 @@
                   <v-icon size=" 50">mdi-email-outline</v-icon>
                 </div>
                 <h3>Correo</h3>
-                <a class="text-white" :href="emailLink">mcmaestranza23@gmail.com</a>
+                <a class="text-white" :href="emailLink">mc.maestranza23@gmail.com</a>
               </div>
             </v-container>
           </v-col>
@@ -72,8 +70,8 @@ export default {
   },
   methods: {
     generateEmailLink() {
-      const emailAddress = 'mcmaestranza23@gmail.com';
-      const subject = 'Cotizacion';
+      const emailAddress = 'mc.maestranza23@gmail.com';
+      const subject = 'Cotización';
       //const body = 'Contenido del cuerpo del correo electrónico';
 
       // Codifica los componentes del correo electrónico
