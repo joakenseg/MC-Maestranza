@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid :justify="justify" align="center" class="bg-blue-lighten-1">
+  <v-container fluid :justify="justify" align="center" class="bg-grey-lighten-2">
     <slot>
       <h3 class="text-h4">{{ title }}</h3>
-      <v-divider></v-divider>
+      <v-divider :thickness="5" class="border-opacity-100 my-2" width="150" color="blue-lighten-1"></v-divider>
     </slot>
   </v-container>
 </template>

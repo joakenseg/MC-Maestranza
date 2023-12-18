@@ -8,14 +8,14 @@
     </v-col>
     <v-col cols="12" md="4" :order="reversed ? 'first' : 'last'">
       <slot name="media">
-        <v-img :src="image" aspect-ratio="16/9" max-height="250"></v-img>
+        <v-img :src="image" aspect-ratio="16/9" max-height="400"></v-img>
       </slot>
     </v-col>
   </v-row>
 </template>
 
 <script>
-import defaultImage from '../assets/image/MAESTRANZA-transformed.png'
+
 
 export default {
   name: 'FeatureGrid',
@@ -31,7 +31,7 @@ export default {
     },
     image: {
       type: String,
-      default: defaultImage
+      default: null
     },
     reversed: {
       type: Boolean,

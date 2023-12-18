@@ -9,7 +9,8 @@
 <script>
 import { useDisplay } from 'vuetify'
 import HelloWorld from './HelloWorld.vue'
-import videoImage from '../assets/image/services-images/Imagen2.jpg'
+import ourMision from '../assets/image/services-images/Imagen2.jpg'
+import ourVision from '../assets/image/ourMision.jpg'
 
 export default {
   name: 'Features',
@@ -30,14 +31,14 @@ export default {
       {
         title: 'Nuestra Misión',
         description:
-          "Nuestra misión es satisfacer eficientemente las necesidades de nuestros clientes; otorgando una excelente calidad en nuestros productos mediante la interrelación con proveedores adecuados, eligiéndolos minuciosamente. Siendo responsables, ya sea con el medio ambiente como con todas las personas que pertenecen a nuestra empresa, brindándoles las mejores condiciones laborales; utilizando como herramienta/objetivo inamovible el mejoramiento continuo.",
-        image: videoImage
+          "Satisfacer de una manera eficiente las necesidades de nuestros clientes, otorgando servicios de calidad en los productos fabricados, reparados, diseñados, mediante la mejora continua en nuestro procesos administrativos y productivos, poniendo énfasis en el bienestar de los clientes, nuestro personal colaborador y quienes participan de nuestras operaciones.",
+        image: ourMision
       },
       {
         title: 'Nuestra Visión',
         description:
-          "La visión de nuestra empresa es obtener una posición sólida,  en el mercado nacional, posicionándonos como el número uno en reparación , fabricación , diseño y mantención de componentes mineros, servicios de corte por láser, oxicorte, plasma, además, toda aquella necesidad estructural o de servicios que nuestros clientes necesiten y que se encuentren al alcance de nuestras fortalezas y conocimientos",
-        image: videoImage
+          "Obtener una posición solida en el mercado nacional mediante nuestro productos y servicios en lo que se refiere a fabricación, reparación, diseños y mantención de componentes  mineros , agrícolas, estructuras metálicas en general, servicios de corte por laser, oxicorte y toda aquella necesidad que nuestros potenciales clientes necesiten y se encuentren al alcance de nuestras fortalezas y conocimientos.",
+        image: ourVision
       },
     ]
   })

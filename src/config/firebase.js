@@ -8,16 +8,15 @@ import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB6jTAZcHzVAgiOaaaWGvB9zrNnZa4UNpM",
-  authDomain: "mc-maestranza.firebaseapp.com",
-  projectId: "mc-maestranza",
-  storageBucket: "mc-maestranza.appspot.com",
-  messagingSenderId: "281003235056",
-  appId: "1:281003235056:web:11e53b8f5a18ce077f5435",
-  measurementId: "G-6FYM5RP57T"
+  apiKey: import.meta.env.VITE_FIRESTORE_API_KEY,
+  authDomain: import.meta.env.VITE_FIRESTORE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIRESTORE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIRESTORE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIRESTORE_MESSAGING_SENDER,
+  appId: import.meta.env.VITE_FIRESTORE_APP_ID,
+  measurementId: import.meta.env.VITE_FIRESTORE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
@@ -27,8 +26,6 @@ async function getAllImages() {
   const imagesRef = ref(storage, '/'); // Ajusta la ruta si es necesario
   const imagesList = await listAll(imagesRef);
   const imageUrls = await Promise.all(imagesList.items.map((item) => getDownloadURL(item)));
-
-  console.log('Image URLs:', imageUrls);
 
   return imageUrls;
 }
