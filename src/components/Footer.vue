@@ -17,7 +17,8 @@
                 región de los lagos</a>
               <v-divider :thickness="1" class="border-opacity-100 my-2" color="white" width="250"></v-divider>
 
-              <v-btn href="https://www.facebook.com" class="mr-2" color="blue" variant="outlined">
+              <v-btn href="https://www.facebook.com/people/MC-Maestranza/61554447613611/" class="mr-2" color="blue"
+                variant="outlined">
                 <v-icon size="30">mdi-facebook</v-icon>
               </v-btn>
               <v-btn href="https://www.instagram.com/mc.maestranza23/" color="red-darken-1" class="mr-2"
@@ -54,6 +55,17 @@
                 <a class="text-white" :href="emailLink">mc.maestranza23@gmail.com</a>
               </div>
             </v-container>
+          </v-col>
+          <v-divider :thickness="1" class="border-opacity-100" color="white"></v-divider>
+          <v-col cols="12" md="6">
+            <p class="text-center mt-3">© 2023 Maestranza MC. Todos los derechos reservados.</p>
+          </v-col>
+          <v-col cols="12" md="6">
+            <p class="text-center">
+              Desarrollado por <a href="https://www.linkedin.com/in/joaquin-ignacio-romero-fuenzalida-b9bb931b8"
+                class="text-white pr-3">Joaquin Romero</a>
+              <v-btn href="https://github.com/joakenseg" color="transparent" icon="mdi-github"></v-btn>
+            </p>
           </v-col>
         </v-row>
       </v-container>
