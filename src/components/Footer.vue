@@ -52,7 +52,16 @@
                   <v-icon size=" 50">mdi-email-outline</v-icon>
                 </div>
                 <h3>Correo</h3>
-                <a class="text-white" :href="emailLink">mc.maestranza23@gmail.com</a>
+                <div>
+                  <a class="text-white"
+                    :href="generateEmailLink('mc.maestranza23@gmail.com', 'Cotización')">mc.maestranza23@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <a class="text-white ml-13"
+                    :href="generateEmailLink('proyectos@mcingenieria.cl', 'Cotización')">proyectos@mcingenieria.cl
+                  </a>
+                </div>
               </div>
             </v-container>
           </v-col>
@@ -75,15 +84,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      emailLink: this.generateEmailLink(),
-    };
-  },
   methods: {
-    generateEmailLink() {
-      const emailAddress = 'mc.maestranza23@gmail.com';
-      const subject = 'Cotización';
+    generateEmailLink(emailAddress, subject) {
+      // El body se guardara para mas adelante
+
       //const body = 'Contenido del cuerpo del correo electrónico';
 
       // Codifica los componentes del correo electrónico
